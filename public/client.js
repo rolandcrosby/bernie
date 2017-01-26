@@ -31,18 +31,16 @@ twttr.ready(function() {
   
   window.onpopstate = function(e) {
     loadTweet(e.state.id);
-  }
+  };
   
   document.getElementById("form").addEventListener("submit", function(e) {
-    var res = /(?:\/statuses\/)?(\d+)/.exec(document.getElementById("tweetID").value);
+    var res = /(\d+)\/?$/.exec(document.getElementById("tweetID").value);
     if (res) {
       history.pushState({"id": res[1]}, "tweet" + res[1], "/" + res[1]);
       loadTweet(res[1]);
     }
-  })
-  
-  
-})
+  });
+});
 
 function loadTweet(id) {
   document.getElementById("tweetID").value = id;
@@ -56,15 +54,11 @@ function loadTweet(id) {
     tgt.firstChild,
     {"conversation": "none", "align": "center"}
   ).then(function(el) {
-    fitTweet(el)
+    fitTweet(el);
   });
 }
 
 function fitTweet(el) {
-/*      width: tweetWidth + 0px;
-        height: (tweetWidth * 156px / 211);
-        transform: rotate(2.6deg) scale((211/tweetWidth));
-*/
   var c = document.getElementById("tweet");
   var wrap = el.parentNode;
   var w = el.offsetWidth, h = el.offsetHeight;
@@ -74,12 +68,10 @@ function fitTweet(el) {
     c.style.width = w + "px";
     c.style.height = (w * 156.0 / 211) + "px";
     c.style.transform = "rotate(2.6deg) scale(" + (211.0 / w) + ")";
-    console.log("fit to w = " + w);
   } else {
     c.style.height = h + "px";
     c.style.width = (h * 211.0 / 156) + "px";
     c.style.transform = "rotate(2.6deg) scale(" + (156.0 / h) + ")";
-    console.log("fit to h = " + h);
   }
 }
 
