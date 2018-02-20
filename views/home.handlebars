@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bernie would have won</title>
+    <title>{{title}}</title>
     <link id="favicon" rel="icon" href="https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Ffavicon.png" type="image/x-png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=720">
-    {{#if tweet}}
-    <meta property="og:title" content="Bernie showed a tweet from {{tweet.user.name}} on the Senate floor!" />
-    <meta property="og:image" content="https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbernie.jpg" />
+    {{#if tweetDetails}}
+    <meta property="og:title" content="{{desc}}" />
+    <meta property="og:image" content="{{background.url}}" />
     {{/if}}
     <script src="https://use.typekit.net/cgv5zrq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -17,17 +17,22 @@
   <body>
     <main>
       <form id="form">
-        <label for="tweetID">Tweet ID or URL:</label><input id="tweetID" type="text" placeholder="https://twitter.com/jack/status/20" {{{valID}}}>
+        <label for="tweetID">Tweet ID or URL:</label>
+        <input id="tweetID" type="text" placeholder="https://twitter.com/jack/status/20" {{#if tweetDetails}}value="{{tweetDetails.id}}"{{/if}}>
         <button id="go" type="submit">go</button>
       </form>
-      <div id="bernie">
-        <div id="tweet">
-          <div id="wrap"></div>
+      <div class="image image--{{template}}">
+        <div class="tweet-container" id="tweet">
         </div>
       </div>
     </main>
     <footer>
       —<a href="http://twitter.com/roooooland">@roooooland</a>
+      <ul>
+        {{#each variants}}
+        <li><a href="javascript:setPage('{{this}}');">{{this}}</a></li>
+        {{/each}}
+      </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="

@@ -1,0 +1,111 @@
+{
+  "bernie": {
+    "background": {
+      "url": "https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbernie.jpg",
+      "width": 710,
+      "height": 473
+    },
+    "tweet": {
+      "width": 211,
+      "height": 156,
+      "left": 353,
+      "top": 90,
+      "rotation": 2.6
+    },
+    "title": "Bernie would have won",
+    "desc": "Bernie showed a tweet from {{tweet.user.name}} on the Senate floor!"
+  },
+  "spicer": {
+    "background": {
+      "url": "https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fspicerblank.jpg",
+      "width": 1193,
+      "height": 669
+    },
+    "tweet": {
+      "width": 282,
+      "height": 175,
+      "left": -11,
+      "top": 154,
+      "rotation": 7,
+      "style": "filter: grayscale(1);"
+    },
+    "overlay": {
+      "url": "https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fhand.png",
+      "width": 96,
+      "height": 211,
+      "left": 196,
+      "top": 186
+    },
+    "title": "Sean Spicer is mad at a tweet",
+    "desc": "Sean Spicer waved around a printout of {{tweet.user.name}}’s tweet at a press briefing"
+  },
+  "bibi": {
+    "background": {
+      "url": "https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbibi.jpg",
+      "width": 750,
+      "height": 560
+    },
+    "tweet": {
+      "width": 330,
+      "height": 317,
+      "left": 95,
+      "top": 134,
+      "rotation": 0.8
+    },
+    "overlay": {
+      "url": "https://cdn.gomix.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbibihands.png",
+      "width": 359,
+      "height": 352,
+      "left": 79,
+      "top": 100
+    },
+    "title": "Benjamin Netanyahu has a grave warning for the world",
+    "desc": "Netanyahu showed {{tweet.user.name}}’s tweet to the UN"
+  },
+  "baby": {
+    "background": {
+      "url": "https://cdn.glitch.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbabyblank.jpg?1518749537075",
+      "width": 1200,
+      "height": 799
+    },
+    "tweet": {
+      "width": 370,
+      "height": 275,
+      "left": 406,
+      "top": 478,
+      "rotation": -0.9      
+    },
+    "overlay": {
+      "url": "https://cdn.glitch.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbabyfingers.png?1518749722932",
+      "left": 396,
+      "top": 464,
+      "width": 394,
+      "height": 189
+    },
+    "title": "Dustin Lance Black and Tom Daley have an announcement",
+    "desc": "omg 😍😍😍"
+  },
+  "baby2": {
+    "background": {
+      "url": "https://cdn.glitch.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbabyblank2.jpg?1518751605688",
+      "width": 1080,
+      "height": 719
+    },
+    "overlay": {
+      "url": "https://cdn.glitch.com/f919105f-03fb-4e49-9855-732bbdf9a0f1%2Fbabyfingers2.png?1518751402677",
+      "left": 388,
+      "top": 440,
+      "width": 311,
+      "height": 136
+    },
+    "tweet": {
+      "width": 262,
+      "height": 216,
+      "left": 408,
+      "top": 456,
+      "rotation": 2
+    },
+    "title": "Dustin Lance Black and Tom Daley have an announcement",
+    "desc": "omg 😍😍😍"
+  }
+}

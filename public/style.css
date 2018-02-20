@@ -1,0 +1,51 @@
+@import url('/computed.css');
+
+main {text-align: center;} 
+form {margin: 1em; font-size: 20px;}
+input, button {font: inherit;}
+label {margin-right: 0.5em;}
+#tweetID, #url {width: 20em;}
+#error {color: #f46242; visibility: hidden;}
+
+.image {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.image .tweet-container {
+  position: absolute;
+  transform-origin: top left;
+  mix-blend-mode: multiply;
+}
+
+.image .tweet-container > div {
+  margin: 0 auto;
+}
+
+footer {
+  margin: 100px auto 10px;
+  font-size: small;
+  color: #ccc;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+footer ul, footer li {
+  list-style: none;
+}
+
+footer ul {
+  display: block;
+}
+
+footer li {
+  display: inline;
+  padding: 0 2em;
+}

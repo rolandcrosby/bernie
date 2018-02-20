@@ -1,31 +1,21 @@
 {
-	"//1": "describes your app and its dependencies",
-	"//2": "https://docs.npmjs.com/files/package.json",
-	"//3": "updating this file will download and update your packages",
-	"name": "my-gomix-app",
+	"name": "bernie",
 	"version": "0.0.1",
-	"description": "What am I about?",
+	"description": "people are mad about tweets",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.14.0",
+		"express": "^4.15.2",
 		"express-handlebars": "3.0.0",
-		"stylus": "0.54.5",
-		"stylish": "1.0.0",
 		"twitter": "1.7.0",
-		"oauth": "^0.9.14"
+		"oauth": "^0.9.15"
 	},
 	"engines": {
 		"node": "6.9.4"
 	},
 	"repository": {
-		"url": "https://gomix.com/#!/project/welcome-project"
-	},
-	"keywords": [
-		"node",
-		"gomix",
-		"express"
-	]
+		"url": "https://github.com/rolandcrosby/bernie"
+	}
 }
